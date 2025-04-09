@@ -1,3 +1,41 @@
+html {
+    font-size: 16px;
+}
+
+header {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#navigation_list {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation li {
+    padding: 1rem;
+}
+
+body {
+    text-align: left;
+}
+
+img {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+   float: right;
+   margin-right: 3rem;
+}
 
 .fa {
    font-weight: 400; 
