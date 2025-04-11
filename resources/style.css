@@ -23,9 +23,13 @@ header {
     margin-right: 2rem;
 }
 
-.navigation a {
+.navigation_item {
     text-decoration: none;
     color: black;
+}
+
+.dark-link {
+    color: white;
 }
 
 .navigation li {
