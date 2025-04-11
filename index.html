@@ -4,41 +4,63 @@
         <title>My portfolio website</title>
         <link  rel="stylesheet" href="resources/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script rel="stylesheet" src="resources/script.js"></script>
+        <script src="https://kit.fontawesome.com/a463b98116.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <h1>My name</h1>
+            <label class="togle">
+             <button id="dark">Dark</button>
+            </label>
             <nav>
-                <ul class="navigation">
-                    <li class="navigation_item">About Me</li>
-                    <li class="navigation_item">Projects</li>
-                    <li class="navigation_item">Skills</li>
-                    <li class="navigation_item">Contact</li>
+                <ul id="navigation_list" class="navigation">
+                    <li><a class="navigation_item" href="./index.html">About me</a></li>
+                    <li><a class="navigation_item" href="#projects">Projects</a></li>
+                    <li><a class="navigation_item" href="#skills">Skills</a></li>
+                    <li><a class="navigation_item" href="./contacts.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="about_me">
-            <h2>About me</h2>
-            <p>I try to become web develeoper and this is the best way to do it. Learnig by doing it.</p>
-            <br>
-            <p>I could definetly add here more but right now I'm doing my Front-end Developer course and don't have much project finished. </p>
-            <br>
+            <div class="about_me_container">
+                <div class="about_me">
+                    <h2>About me</h2>
+                    <p>I try to become web develeoper and this is the best way to do it. Learnig by doing it.</p>
+                    <br>
+                    <p>I could definetly add here more but right now I'm doing my Front-end Developer course and don't have much project finished. </p>
+                    <br>
+                </div>
+                <div class="about_me_image">
+                    <img src="./resources/images/_bba0e058-210b-48b4-85f0-a1734f5902b7.jpeg">
+                </div>
             </div>
-            <div class="projects">
+            <div id="projects" class="projects">
                 <h2>Projects</h2>
                 <ul class="projects_list">
-                    <li class="projects_list_item">Astrology club</li>
-                    <li class="projects_list_item">Favicon, Inc.</li>
+                    <li ><a class="projects_list_item" href="https://nefertaum.github.io/astrologyclub/"><h3>Astrology club</h3></a></li>
+                        <ul class="Astrology_club_list">
+                            <li>This site is dedicated to fictive "Astrology club".</li>
+                            <li>I used HTML and CSS flex-box to achive responsive design</li>
+                        </ul>   
+                    <a  href="https://nefertaum.github.io/astrologyclub/">
+                    <img alt="image of saturn" src="./resources/images/planets.avif">
+                    </a>
+                    <li ><a class="projects_list_item" href="https://nefertaum.github.io/Favicon/"><h3>Favicon, Inc.</h3></a></li>
+                        <ul class="Favicon_list">
+                            <li>This is site about fictive cheese selling company.</li>
+                            <li>I used HTML and CSS to hone my skills</li>
+                        </ul>
+                    <a href="https://nefertaum.github.io/Favicon/">
+                    <img alt="image of gouda cheese" src="./resources/images/gouda 2.png">
+                    </a>
                 </ul>
             </div>
-            <div class="skills">
+            <div id="skills" class="skills">
                 <h2>Skills</h2>
                 <div class="skill_container">
                 <i class="fa fa-html5"></i>
-                <i class="fa fa-css3-alt"></i>
-                <i class="fa fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
                 <i class="fa fa-git"></i>
                 <i class="fa fa-github"></i>
                 <i class="fa fa-terminal"></i>
@@ -47,7 +69,9 @@
         </main>
         <footer>
             <p>Made in EU</p>
+            <p>2025</p>
         </footer>
+        <script rel="stylesheet" src="resources/script.js"></script>
     </body>
     
 </html>
